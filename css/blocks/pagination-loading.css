@@ -1,0 +1,9 @@
+.pagination-wrapper {
+  display: block;
+  text-align: center;
+}
+
+.pagination-loading {
+  border: 2px solid;
+  padding: 10px 40px;
+}

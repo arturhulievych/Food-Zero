@@ -1,0 +1,38 @@
+.nav-list {
+  list-style: none;
+}
+
+.nav-item {
+  margin-bottom: 28px;
+}
+
+.nav-link {
+  position: relative;
+  color: #fff;
+  font-size: clamp(1.5rem, 0.1875rem + 3.8182vw, 4.125rem);
+  text-transform: uppercase;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -26px;
+  }
+}
+
+.nav-link--blogs {
+  color: #9caa00;
+  &::before {
+    background: #9caa00;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-item {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,66 @@
+.contacts {
+  padding: 272px 0 186px;
+  background: url(../../icons/contacts/orange.png) top 150px center no-repeat;
+}
+
+.contacts-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  &:first-child {
+    margin-bottom: 60px;
+  }
+}
+
+.contacts-img {
+  width: 48%;
+}
+
+.contacts-text {
+  font-size: clamp(1rem, 0.7594rem + 1.203vw, 2rem);
+  max-width: 507px;
+  color: #333333;
+  span {
+    color: #9caa00;
+  }
+}
+
+.contacts-inner {
+  max-width: 740px;
+  p {
+    margin-bottom: 53px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    background: none;
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .contacts-img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 550px) {
+  .contacts-wrapper {
+    flex-direction: column;
+    &:last-child {
+      flex-direction: column-reverse;
+    }
+  }
+  .contacts-img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contacts-inner {
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}

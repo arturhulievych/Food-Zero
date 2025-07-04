@@ -1,0 +1,21 @@
+.dish {
+  color: #000000;
+}
+
+.dish-price {
+  text-align: right;
+  border-bottom: 4px dotted;
+  font-size: clamp(1.625rem, 0.9375rem + 2vw, 3rem);
+  margin-bottom: 24px;
+}
+
+.dish-name {
+  font-size: clamp(1.875rem, 0.6875rem + 3.4545vw, 4.25rem);
+  margin-bottom: 24px;
+}
+
+@media (max-width: 800px) {
+  .dish {
+    margin-bottom: 25px;
+  }
+}

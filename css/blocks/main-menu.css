@@ -1,0 +1,82 @@
+.main-menu-starters {
+  padding: 122px 0 140px;
+  background: url(../../icons/menu-list/blueberry.png) right top no-repeat;
+}
+
+.main-menu-title {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.main-menu-text {
+  margin-bottom: 81px;
+  text-align: center;
+}
+
+.main-menu-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.main-menu-img {
+  max-width: 48%;
+}
+
+.main-menu-items {
+  max-width: 710px;
+  width: 100%;
+}
+
+.menu-page {
+  .dish {
+    margin-bottom: 58px;
+  }
+}
+
+.main-menu-mains {
+  padding: 82px 0 130px;
+}
+
+.main-menu-pastries {
+  padding: 187px 0 208px;
+  background: url(../../icons/menu-list/avocado.png) top 65px center no-repeat;
+}
+
+@media (max-width: 1400px) {
+  .main-menu-img {
+    max-width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .main-menu-wrapper {
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .main-menu-items {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-menu-starters,
+  .main-menu-mains,
+  .main-menu-pastries {
+    padding: 70px 0;
+    background: none;
+  }
+
+  .main-menu-text {
+    margin-bottom: 35px;
+  }
+
+  .menu-page {
+    .dish {
+      margin-bottom: 25px;
+    }
+  }
+}

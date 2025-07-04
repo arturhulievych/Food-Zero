@@ -1,0 +1,98 @@
+.cook-top {
+  padding: 222px 0 0;
+  background: url(../../icons/cook/leafsmall.png) left 57px top 70px / 360px
+      no-repeat,
+    url(../../icons/cook/leafbig.svg) right 72px bottom 30px / 460px no-repeat,
+    #ebf0e4;
+}
+
+.cook-wrapper {
+  display: flex;
+  gap: 61px;
+}
+
+.cook-img {
+  width: 57%;
+  margin-bottom: -2%;
+}
+
+.cook-title {
+  margin-bottom: 18px;
+}
+
+.cook-bottom {
+  padding: 207px 0 190px;
+}
+
+.cook-items {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cook-item {
+  text-align: center;
+  max-width: 508px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cook-item-img {
+  max-width: 200px;
+}
+
+.cook-item-img,
+.cook-item-title {
+  margin-bottom: 39px;
+}
+
+@media (max-width: 1500px) {
+  .cook-top {
+    background-size: 26%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cook-top {
+    padding: 80px 0 0;
+    background: #ebf0e4;
+  }
+
+  .cook-img {
+    margin-left: -5%;
+  }
+
+  .cook-wrapper {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    .cook {
+      padding: 0;
+    }
+
+    .cook-bottom {
+      padding: 100px 0;
+    }
+  }
+
+  .cook-items {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .cook-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .cook-img {
+    width: 75%;
+  }
+}

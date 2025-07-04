@@ -1,0 +1,258 @@
+.promo {
+  background: #233000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.promo-title {
+  max-width: 1058px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.promo-text {
+  max-width: 565px;
+  text-wrap: balance;
+}
+
+.promo-images {
+  width: 48%;
+  position: relative;
+  margin-left: auto;
+  margin-top: -27%;
+  margin-bottom: 240px;
+}
+
+.promo-img--spices {
+  position: absolute;
+  left: -43.7%;
+  bottom: -40px;
+  width: 107.5%;
+}
+
+.promo-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.promo-inner-img {
+  max-width: 792px;
+  margin-bottom: 54px;
+}
+
+.promo-caption {
+  font-size: clamp(1.75rem, 0.5rem + 3.6364vw, 4.25rem);
+  max-width: 493px;
+  margin-bottom: 54px;
+}
+
+.promo-inner-text {
+  max-width: 508px;
+  margin-bottom: 84px;
+}
+
+.promo-inner-text--first {
+  max-width: 565px;
+}
+
+.promo-inner-img--peppers {
+  max-width: 508px;
+}
+
+.home-page {
+  .promo {
+    padding: 310px 0 213px;
+  }
+  .promo-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    gap: 40px;
+  }
+}
+
+.menu-page {
+  .promo {
+    background: url(../../images/Promo/menu-page/promo-bg.jpg) center
+      center/cover no-repeat;
+  }
+  .promo-title {
+    max-width: 780px;
+  }
+  .promo-text {
+    font-size: clamp(1.25rem, 1.0695rem + 0.9023vw, 2rem);
+    max-width: 780px;
+  }
+}
+
+.contact-page {
+  .promo {
+    background: url(../../images/Promo/contact-page/contact-bg.jpg) center
+      center/cover no-repeat;
+  }
+
+  .promo-text {
+    font-size: clamp(1.25rem, 1.0695rem + 0.9023vw, 2rem);
+    max-width: 915px;
+    margin-bottom: 93px;
+  }
+
+  .promo-schedule {
+    max-width: 696px;
+    margin-left: auto;
+    width: 100%;
+    margin-bottom: -20%;
+  }
+
+  .promo-schedule-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      border-bottom: 4px dotted;
+      padding-bottom: 38px;
+      margin-bottom: 38px;
+    }
+  }
+
+  .promo-schedule-text.caption {
+    font-size: clamp(1.25rem, 1.0695rem + 0.9023vw, 2rem);
+  }
+}
+
+.about-page {
+  .promo {
+    background: url(../../images/about/about-bg.jpg) center center/cover
+      no-repeat;
+  }
+
+  .promo-text {
+    font-size: clamp(1.5rem, 1.3797rem + 0.6015vw, 2rem);
+  }
+
+  .promo-title,
+  .promo-text {
+    margin-left: auto;
+    max-width: 900px;
+    width: 100%;
+  }
+}
+
+.portfolio-page {
+  .promo {
+    background: url(../../images/Promo/portfolio-page/promo-bg.jpg) center
+      center/cover no-repeat;
+    text-align: center;
+  }
+
+  .promo-wrapper {
+    align-items: center;
+  }
+
+  .promo-title {
+    max-width: 1304px;
+  }
+}
+
+.single-page {
+  .promo {
+    background: url(../../images/single-portfolio/orange.jpg) center
+      center/cover no-repeat;
+    text-align: center;
+  }
+
+  .promo-wrapper {
+    align-items: center;
+  }
+
+  .promo-title {
+    max-width: 1304px;
+    margin-bottom: 0;
+  }
+}
+
+.blog-page {
+  .promo {
+    background: url(../../images/Promo/blogs-second/blogs-second-bg.jpg) center
+      center/cover no-repeat;
+  }
+
+  .promo-wrapper {
+    align-items: center;
+  }
+
+  .promo-title {
+    max-width: 1480px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contact-page {
+    .promo-schedule {
+      margin-bottom: 0;
+      max-width: 500px;
+    }
+    .promo-wrapper {
+      justify-content: flex-end;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .home-page {
+    .promo {
+      padding: 180px 0 50px;
+    }
+    .promo-images {
+      margin-bottom: 90px;
+    }
+  }
+  .contact-page {
+    .promo-schedule-wrapper {
+      &:first-child {
+        border-bottom: 3px dotted;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .home-page {
+    .promo-text {
+      width: 50%;
+      text-wrap: auto;
+    }
+  }
+
+  .promo-images {
+    margin-top: -15%;
+  }
+
+  .promo-img--spices {
+    bottom: -25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .promo-img--spices {
+    bottom: -25px;
+  }
+
+  .blog-page {
+    .promo-wrapper {
+      align-items: flex-start;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .promo-schedule-text {
+    font-size: 14px;
+  }
+}

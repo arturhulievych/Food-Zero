@@ -1,0 +1,158 @@
+.about {
+  padding: 218px 0 117px;
+  background: url(../../icons/about/tomato.svg) top 70px center no-repeat;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 110px;
+  align-items: center;
+  margin-bottom: 280px;
+}
+
+.about-wrapper--second {
+  align-items: flex-start;
+
+  .about-text-big {
+    margin-top: 160px;
+  }
+}
+
+.about-wrapper--third {
+  align-items: flex-end;
+  margin-top: -41%;
+
+  .about-text-big {
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
+.about-title {
+  margin-bottom: 18px;
+}
+
+.about-text {
+  max-width: 660px;
+}
+
+.about-name {
+  margin: 24px 0;
+}
+
+.about-text-big {
+  max-width: 510px;
+}
+
+.about-subtitle {
+  font-size: clamp(2.125rem, 1.6137rem + 2.5564vw, 4.25rem);
+}
+
+.about-subtitle,
+.about-name {
+  text-align: center;
+}
+
+.about-img-people {
+  width: 100%;
+}
+
+.about-video {
+  padding: 238px 0 188px;
+  background: url(../../images/about/video-background.jpg) center center/cover
+    no-repeat;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.about-video-caption {
+  font-size: clamp(2.5rem, 1.4774rem + 5.1128vw, 6.75rem);
+}
+
+.about-video-text {
+  margin-bottom: 82px;
+}
+
+.about-video-btn {
+  background: url(../../icons/about/play.svg) center center/cover no-repeat;
+  max-width: 142px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  border: none;
+}
+
+.about-video-player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+.close-video {
+  top: 70px;
+  right: 40px;
+  left: auto;
+  display: none;
+  padding-top: 20px;
+  &.active {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .about {
+    background: none;
+  }
+
+  .about-wrapper {
+    margin-bottom: 100px;
+    gap: 40px;
+  }
+
+  .about-video-btn {
+    max-width: 80px;
+  }
+
+  .about-video-text {
+    margin-bottom: 40px;
+  }
+  .about-video {
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-wrapper {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-wrapper--third {
+    margin-top: -15%;
+    .about-text-big {
+      order: 1;
+      text-align: left;
+    }
+  }
+
+  .about-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .about-wrapper--second {
+    .about-text-big {
+      margin-top: 0;
+    }
+  }
+
+  .about-video-caption {
+    margin-bottom: 20px;
+  }
+}

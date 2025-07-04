@@ -1,0 +1,89 @@
+.reservation {
+  background: #ebf0e4;
+  padding: 237px 0 254px;
+  text-align: center;
+}
+
+.reservation-title {
+  margin-bottom: 18px;
+}
+
+.reservation-text,
+.reservation-form-inner {
+  margin-bottom: 133px;
+}
+
+.reservation-form-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
+}
+
+.reservation-form-input {
+  padding: 1.25em 1.66em;
+  background: transparent;
+  border: 2px solid;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  &::placeholder {
+    color: #000;
+  }
+}
+
+.contact-page {
+  .reservation-form-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .reservation-form-input--long {
+    grid-column: 1/3;
+  }
+
+  .reservation {
+    background: url(../../icons/reservation/mint.png) top 50px left 160px
+        no-repeat,
+      #ebf0e4;
+  }
+}
+
+@media (max-width: 1200px) {
+  .reservation {
+    padding: 100px 0;
+  }
+  .contact-page {
+    .reservation {
+      background: #ebf0e4;
+      padding: 100px 0;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .reservation-form-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .reservation-text,
+  .reservation-form-inner {
+    margin-bottom: 50px;
+    gap: 35px;
+  }
+
+  .reservation-form-input {
+    padding: 0.9em 1.5em;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact-page {
+    .reservation-form-inner {
+      grid-template-columns: 1fr;
+    }
+    .reservation-form-input--long {
+      grid-column: 1/2;
+    }
+  }
+}

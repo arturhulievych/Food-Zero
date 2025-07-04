@@ -1,0 +1,95 @@
+.reviews {
+  padding: 118px 0 145px;
+}
+
+.reviews-slider {
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: static;
+    min-width: 48px;
+    height: 28px;
+    margin: 0;
+    &::after {
+      content: none;
+    }
+  }
+  .swiper-button-next {
+    background: url(../../icons/icon-arrow-right.svg) center center/cover
+      no-repeat;
+  }
+  .swiper-button-prev {
+    background: url(../../icons/arrow-left.svg) center center/cover no-repeat;
+  }
+  .swiper-pagination {
+    position: static;
+    font-size: clamp(1rem, 0.5rem + 1.4545vw, 2rem);
+  }
+}
+
+.reviews-slider-nav {
+  display: flex;
+  position: absolute;
+  bottom: 45px;
+  right: 0;
+  align-items: center;
+  gap: 40px;
+}
+
+.reviews-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.reviews-avatar {
+  max-width: 170px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.reviews-text {
+  max-width: 1262px;
+  font-size: clamp(1.625rem, 1.2942rem + 1.6541vw, 3rem);
+  margin-bottom: 86px;
+  background: url(../../icons/reviews/commas.png) top right / contain no-repeat;
+}
+
+.reviews-profession {
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+@media (max-width: 800px) {
+  .reviews-text {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-wrapper {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .reviews-avatar {
+    max-width: 90px;
+  }
+
+  .reviews-text {
+    background-size: 35%;
+    margin-bottom: 30px;
+  }
+
+  .reviews-slider {
+    .swiper-button-next,
+    .swiper-button-prev {
+      min-width: 29px;
+      height: 17px;
+    }
+  }
+
+  .reviews-slider-nav {
+    gap: 20px;
+    bottom: 5px;
+  }
+}

@@ -1,0 +1,17 @@
+.wrapper {
+  max-width: 800px;
+  border: 2px solid #ffd7ff;
+  background: #7a727a;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 2fr 1fr 1fr;
+  /* grid-template-columns: repeat(3, 1fr); */
+}
+
+.item {
+  min-width: 126px;
+  padding: 60px 20px;
+  background: #000000;
+  border: 2px solid #ffd7ff;
+  text-align: center;
+}

@@ -1,0 +1,100 @@
+.procces {
+  padding: 267px 0 320px;
+  background: url(../../icons/procces/rosemary-right.png) top right no-repeat,
+    url(../../icons/procces/rosemary-left.png) bottom 25px left no-repeat;
+}
+
+.procces-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 102px;
+  align-items: center;
+}
+
+.procces-wrapper--second {
+  display: flex;
+  justify-content: space-around;
+  .procces-img {
+    width: 100%;
+  }
+}
+
+.procces-inner {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+.procces-title {
+  text-align: center;
+  margin-bottom: 174px;
+}
+
+.procces-subtitle {
+  font-size: clamp(1.875rem, 1.0028rem + 4.3609vw, 5.5rem);
+  margin-bottom: 28px;
+}
+
+.procces-img--big {
+  margin-bottom: 118px;
+}
+
+.procces-img--small {
+  margin: 46px 0;
+}
+
+.procces-text {
+  max-width: 616px;
+}
+
+.procces-subtitle--pickled,
+.procces-text--small {
+  margin-left: 80px;
+}
+
+.procces-text--small {
+  max-width: 430px;
+}
+
+@media (max-width: 800px) {
+  .main {
+    .procces {
+      background: none;
+      padding-top: 0;
+    }
+  }
+
+  .procces-title {
+    margin-bottom: 50px;
+  }
+
+  .procces-wrapper {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .procces-subtitle--pickled,
+  .procces-text--small {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .procces-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .procces-img--big {
+    margin-bottom: 0;
+  }
+
+  .procces-wrapper--second {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .procces-img--small {
+    order: 1;
+  }
+}

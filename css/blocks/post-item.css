@@ -1,0 +1,127 @@
+.post-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-item-head {
+  position: relative;
+}
+
+.post-item-img {
+  margin-bottom: 68px;
+}
+
+.post-item-category {
+  padding: 7px 53px;
+  background: #5e6600;
+  color: #ffffff;
+  font-size: 26px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.post-item-info {
+  /*   display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: 32px; */
+  font-size: 18px;
+  color: #5e6600;
+  margin-bottom: 48px;
+  list-style: disc;
+  li {
+    display: inline-block;
+    margin-right: 30px;
+    &:first-child {
+      &::marker {
+        content: none;
+      }
+    }
+  }
+  br {
+    display: none;
+  }
+}
+
+.post-item-avatar {
+  max-width: 60px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+.post-item-title {
+  margin-bottom: 18px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-item-text {
+  margin-bottom: 46px;
+  font-size: clamp(1.0625rem, 0.9873rem + 0.3759vw, 1.375rem);
+  padding-top: 18px;
+  border-top: 4px dotted;
+}
+
+.post-item-link {
+  padding-right: 58px;
+  color: #000000;
+  transition: 0.2s;
+  background: url(../../icons/icon-arrow-right.svg) right center no-repeat;
+  &:hover {
+    color: #000000;
+    padding-right: 78px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .post-item-info {
+    br {
+      display: block;
+    }
+  }
+  br + li {
+    margin-left: 64px;
+  }
+}
+
+@media (max-width: 950px) {
+  .post-item-info {
+    font-size: 16px;
+
+    li {
+      margin-right: 15px;
+    }
+  }
+
+  .post-item-category {
+    font-size: inherit;
+    padding: 7px 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .post-item-img {
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+
+  .post-item-info {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .post-item-info {
+    font-size: 14px;
+    li {
+      margin-right: 9px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.burger {
+  min-width: 46px;
+  cursor: pointer;
+  span {
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin-bottom: 14px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.btn {
+  border: 2px solid;
+  padding: 0.625em 1.437em;
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 0.5rem + 1.4545vw, 2rem);
+  display: inline-block;
+}
+
+.btn--green {
+  padding: 0.625em 2.97em;
+  background: #233000;
+  color: #ffffff;
+  border: none;
+}
+
+.btn--lightgreen {
+  background: #5e6600;
+}
+
+.contact-page {
+  .btn--black {
+    color: #000;
+  }
+
+  .btn--green {
+    background: #5e6600;
+  }
+}
+
+.btn--modal {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .btn--modal {
+    display: inline-block;
+  }
+}

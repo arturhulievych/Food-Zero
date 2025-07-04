@@ -1,0 +1,30 @@
+.socials {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.socials-item {
+  width: 28px;
+}
+
+.socials-link {
+  display: block;
+  aspect-ratio: 1/1;
+}
+
+.socials-link--inst {
+  background: url(../../icons/footer/instagram.svg) no-repeat;
+}
+
+.socials-link--twitter {
+  background: url(../../icons/footer/twitter.svg) no-repeat;
+}
+
+.socials-link--facebook {
+  background: url(../../icons/footer/facebook.svg) no-repeat;
+}
+
+.socials-link--youtube {
+  background: url(../../icons/footer/youtube.svg) no-repeat;
+}

@@ -1,0 +1,36 @@
+.menu {
+  padding: 176px 0 218px;
+  background: url(../../images/menu/leaves.png) right top/880px no-repeat;
+  /* background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 880px; */
+}
+
+.menu-title {
+  margin-bottom: 18px;
+}
+
+.menu-text {
+  margin-bottom: 158px;
+  max-width: 532px;
+}
+
+.menu-items {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 108px;
+}
+
+@media (max-width: 800px) {
+  .menu-items {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .menu-text {
+    margin-bottom: 50px;
+  }
+}
