@@ -45,6 +45,7 @@
   width: 100%;
   background: transparent;
   outline: none;
+  border-radius: 0;
 }
 
 .footer-form-text {
