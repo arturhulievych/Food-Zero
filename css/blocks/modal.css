@@ -2,7 +2,7 @@
   background: url(../../images/modal/modal-nav-bg.jpg) center center/cover
     no-repeat;
   position: fixed;
-  top: -100%;
+  top: -150%;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -11,10 +11,10 @@
   align-items: center;
   transition: 0.3s;
   padding: 20px 40px;
+  overflow: auto;
   &.active {
     top: 0;
   }
-  overflow: auto;
 }
 
 .modal-wrapper {
